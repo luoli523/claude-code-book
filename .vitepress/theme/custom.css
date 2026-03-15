@@ -1,35 +1,15 @@
-/* ── 左上角 Logo 卡片：头像居中在上，书名居中在下 ── */
-
-/* 整个 title 链接容器：竖向居中 */
+/* ── 头像在上、书名在下（换行排列）── */
 .VPNavBarTitle .title {
-  display: flex !important;
+  display: inline-flex !important;
   flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 4px !important;
-  border: 1px solid var(--vp-c-divider) !important;
-  border-radius: 8px !important;
-  padding: 6px 14px !important;
+  align-items: flex-start !important;
   line-height: 1.2 !important;
-  text-decoration: none !important;
+  gap: 2px;
 }
 
-/* 头像 block 显示，确保独占一行 */
-.VPNavBarTitle .title img {
+/* 头像在 nav-bar-title-before slot 里，确保它是块级 */
+.VPNavBarTitle .title .guige-avatar {
   display: block !important;
-  margin: 0 auto !important;
-  flex-shrink: 0 !important;
-}
-
-/* 书名文字：居中、缩小一点适配卡片宽度 */
-.VPNavBarTitle .title .site-name {
-  font-size: 12px !important;
-  text-align: center !important;
-  white-space: nowrap !important;
-  display: block !important;
-}
-
-/* 让 nav bar 有足够高度容纳卡片 */
-:root {
-  --vp-nav-height: 72px;
+  width: 28px !important;
+  height: 28px !important;
 }
