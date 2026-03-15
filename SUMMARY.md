@@ -1,6 +1,6 @@
 # 目录
 
-[封面](README.md)
+[封面](index.md)
 [前言](preface.md)
 
 ---

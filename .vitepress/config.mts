@@ -18,7 +18,7 @@ export default defineConfig({
       {
         text: '前言',
         items: [
-          { text: '关于本书', link: '/README' },
+          { text: '关于本书', link: '/' },
           { text: '前言', link: '/preface' },
         ]
       },
