@@ -38,10 +38,11 @@ Stop hook（可执行收尾动作）
 
 | 章节 | 内容 |
 |------|------|
-| [8.1 Hook 基础概念](./8.1-hooks-basics.md) | 事件类型、配置结构、退出码语义 |
-| [8.2 你的第一个 Hook](./8.2-first-hook.md) | 从零配置，实战 prettier 自动格式化 |
-| [8.3 实用 Hook 食谱](./8.3-hook-recipes.md) | 文件保护、危险命令拦截、任务通知、自动提交 |
-| [8.4 高级用法](./8.4-advanced-hooks.md) | stdin JSON、动态决策、外部集成、常见坑 |
+| [8.1 Hooks 的设计哲学](./8.1-philosophy.md) | 为什么需要 Hooks，确定性 vs 概率性 |
+| [8.2 Hook 事件类型详解](./8.2-event-types.md) | 四大事件：PreToolUse / PostToolUse / Notification / Stop |
+| [8.3 编写第一个 Hook](./8.3-first-hook.md) | 从零配置，实战 prettier 自动格式化 |
+| [8.4 实战案例集](./8.4-examples.md) | 文件保护、危险命令拦截、任务通知、自动提交 |
+| [8.5 常见错误与调试](./8.5-debugging.md) | 排查 Hook 不生效的完整清单 |
 
 ## 适合谁读？
 

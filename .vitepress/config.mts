@@ -32,8 +32,8 @@ export default defineConfig({
             items: [
               { text: '1.1 AI 编程助手的兴起', link: '/chapter-1/1.1-ai-coding-assistant' },
               { text: '1.2 核心架构', link: '/chapter-1/1.2-architecture' },
-              { text: '1.3 与其他工具的对比', link: '/chapter-1/1.3-comparison' },
-              { text: '1.4 适用场景与局限性', link: '/chapter-1/1.4-use-cases' },
+              { text: '1.3 环境与 IDE 集成', link: '/chapter-1/1.3-environments' },
+              { text: '1.4 与其他工具的对比', link: '/chapter-1/1.4-comparison' },
             ]
           },
           {

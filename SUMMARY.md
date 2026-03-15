@@ -10,8 +10,8 @@
 - [第一章：Claude Code 是什么](chapter-1/README.md)
   - [1.1 AI 编程助手的兴起](chapter-1/1.1-ai-coding-assistant.md)
   - [1.2 Claude Code 的核心架构](chapter-1/1.2-architecture.md)
-  - [1.3 与其他工具的对比](chapter-1/1.3-comparison.md)
-  - [1.4 适用场景与局限性](chapter-1/1.4-use-cases.md)
+  - [1.3 在哪里用：环境与 IDE 集成](chapter-1/1.3-environments.md)
+  - [1.4 和其他工具比：它的位置在哪里](chapter-1/1.4-comparison.md)
 
 - [第二章：安装与环境配置](chapter-2/README.md)
   - [2.1 安装 Claude Code](chapter-2/2.1-installation.md)
