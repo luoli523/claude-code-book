@@ -1,5 +1,20 @@
-/* 确保头像在 nav 标题区域垂直居中 */
+/* 确保 nav 标题区域横向排列、垂直居中 */
 .VPNavBarTitle .title {
-  display: flex;
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  gap: 0;
+}
+
+/* 头像不换行 */
+.guige-avatar {
+  display: inline-block !important;
+  flex-shrink: 0;
+}
+
+/* 确保音乐按钮区域内联对齐 */
+.VPNavBarMenuGroup,
+.VPNavBarMenuLink {
+  display: inline-flex;
   align-items: center;
 }
