@@ -1,20 +1,30 @@
-/* 确保 nav 标题区域横向排列、垂直居中 */
+/* ── 头像与书名同行对齐 ── */
 .VPNavBarTitle .title {
   display: inline-flex !important;
   align-items: center !important;
   flex-direction: row !important;
-  gap: 0;
 }
 
-/* 头像不换行 */
 .guige-avatar {
   display: inline-block !important;
   flex-shrink: 0;
 }
 
-/* 确保音乐按钮区域内联对齐 */
-.VPNavBarMenuGroup,
-.VPNavBarMenuLink {
-  display: inline-flex;
-  align-items: center;
+/* ── 音乐按钮：flex order 插到 Search 和 Menu 之间 ── */
+
+/* Search 排第 1 */
+.VPNavBar .content .content-body .search {
+  order: 1;
 }
+
+/* 我们的音乐按钮排第 2（紧接 Search 后，在 Menu 前）*/
+.VPNavBar .content .content-body .vp-btn-wrap {
+  order: 2;
+}
+
+/* Menu（开始阅读等）排第 3 */
+.VPNavBar .content .content-body .menu {
+  order: 3;
+}
+
+/* 其余保持默认（translations, appearance, social, extra 等排更后面） */
