@@ -15,22 +15,28 @@ function togglePlayer() {
 
 function closePlayer() {
   isOpen.value = false
-  if (videoRef.value) {
-    videoRef.value.pause()
-  }
+  if (videoRef.value) videoRef.value.pause()
 }
 </script>
 
 <template>
-  <!-- 导航栏按钮 -->
-  <div class="vp-btn-wrap">
-    <button class="vp-music-btn" @click="togglePlayer" :class="{ active: isOpen }">
-      <span class="vp-music-icon">🎵</span>
+  <!-- 与 VitePress social-link 风格一致的图标按钮 -->
+  <div class="vp-music-wrap">
+    <button
+      class="vp-music-icon-btn"
+      :class="{ active: isOpen }"
+      @click="togglePlayer"
+      aria-label="看累了听个音乐吧"
+    >
+      <!-- 音符 SVG，尺寸和 VitePress icon 一致 -->
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path d="M9 3v10.55A4 4 0 1 0 11 17V7h4V3H9z"/>
+      </svg>
     </button>
     <span class="vp-music-tooltip">看累了听个音乐吧</span>
   </div>
 
-  <!-- 右下角悬浮播放器 -->
+  <!-- 右下角浮窗播放器 -->
   <Teleport to="body">
     <Transition name="player-slide">
       <div v-if="isOpen" class="vp-float-player">
@@ -51,38 +57,34 @@ function closePlayer() {
 </template>
 
 <style scoped>
-/* ── 按钮 ── */
-.vp-btn-wrap {
+/* ── 图标按钮 —— 与 VitePress .VPSocialLink 风格一致 ── */
+.vp-music-wrap {
   position: relative;
   display: inline-flex;
   align-items: center;
-  margin-right: 4px;
 }
 
-.vp-music-btn {
-  display: inline-flex;
+.vp-music-icon-btn {
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  border: 1px solid var(--vp-c-divider);
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: none;
   background: transparent;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  color: var(--vp-c-text-2);
+  transition: color 0.2s, background 0.15s;
+  padding: 0;
+}
+.vp-music-icon-btn:hover,
+.vp-music-icon-btn.active {
   color: var(--vp-c-text-1);
-}
-.vp-music-btn:hover,
-.vp-music-btn.active {
   background: var(--vp-c-bg-soft);
-  border-color: var(--vp-c-brand-1);
 }
-.vp-music-btn.active .vp-music-icon {
-  animation: spin 1.5s linear infinite;
-}
-.vp-music-icon {
-  font-size: 16px;
-  display: inline-block;
+.vp-music-icon-btn.active svg {
+  animation: note-spin 1.5s linear infinite;
 }
 
 /* Tooltip */
@@ -100,16 +102,7 @@ function closePlayer() {
   pointer-events: none;
   z-index: 100;
 }
-.vp-music-tooltip::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  right: 10px;
-  border: 5px solid transparent;
-  border-top: none;
-  border-bottom-color: rgba(0, 0, 0, 0.78);
-}
-.vp-btn-wrap:hover .vp-music-tooltip {
+.vp-music-wrap:hover .vp-music-tooltip {
   display: block;
 }
 
@@ -123,7 +116,7 @@ function closePlayer() {
   overflow: hidden;
   background: var(--vp-c-bg);
   border: 1px solid var(--vp-c-divider);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   z-index: 9999;
 }
 
@@ -138,7 +131,6 @@ function closePlayer() {
   font-weight: 500;
   color: var(--vp-c-text-1);
 }
-
 .vp-float-close {
   background: none;
   border: none;
@@ -147,14 +139,12 @@ function closePlayer() {
   font-size: 14px;
   padding: 2px 4px;
   border-radius: 4px;
-  line-height: 1;
   transition: background 0.15s, color 0.15s;
 }
 .vp-float-close:hover {
   background: var(--vp-c-danger-soft);
   color: var(--vp-c-danger-1);
 }
-
 .vp-float-video {
   width: 100%;
   display: block;
@@ -164,18 +154,13 @@ function closePlayer() {
 
 /* 入场动画 */
 .player-slide-enter-active,
-.player-slide-leave-active {
-  transition: opacity 0.25s ease, transform 0.25s ease;
-}
+.player-slide-leave-active { transition: opacity 0.25s ease, transform 0.25s ease; }
 .player-slide-enter-from,
-.player-slide-leave-to {
-  opacity: 0;
-  transform: translateY(20px) scale(0.95);
-}
+.player-slide-leave-to { opacity: 0; transform: translateY(20px) scale(0.95); }
 
-/* 音符旋转动画 */
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+@keyframes note-spin {
+  0%   { transform: rotate(-10deg); }
+  50%  { transform: rotate(10deg);  }
+  100% { transform: rotate(-10deg); }
 }
 </style>

@@ -7,13 +7,13 @@ const imgSrc = withBase('/guige.jpg')
 </script>
 
 <template>
-  <!-- 小头像：点击弹出大图 -->
+  <!-- 点击头像弹出大图 -->
   <img
     :src="imgSrc"
     class="guige-avatar"
     alt="鬼哥"
     title="点击查看大图"
-    @click="showModal = true"
+    @click.prevent.stop="showModal = true"
   />
 
   <!-- 全屏大图弹窗 -->
@@ -33,18 +33,16 @@ const imgSrc = withBase('/guige.jpg')
 
 <style scoped>
 .guige-avatar {
-  width: 30px;
-  height: 30px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
-  margin-right: 6px;
-  border: 2px solid var(--vp-c-brand-1);
+  display: block;
   transition: transform 0.2s, box-shadow 0.2s;
-  flex-shrink: 0;
 }
 .guige-avatar:hover {
-  transform: scale(1.12);
+  transform: scale(1.08);
   box-shadow: 0 0 0 3px var(--vp-c-brand-soft);
 }
 
@@ -73,13 +71,8 @@ const imgSrc = withBase('/guige.jpg')
   font-size: 13px;
 }
 
-/* 弹窗动画 */
 .modal-fade-enter-active,
-.modal-fade-leave-active {
-  transition: opacity 0.2s ease;
-}
+.modal-fade-leave-active { transition: opacity 0.2s ease; }
 .modal-fade-enter-from,
-.modal-fade-leave-to {
-  opacity: 0;
-}
+.modal-fade-leave-to { opacity: 0; }
 </style>
