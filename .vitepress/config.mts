@@ -2,12 +2,11 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/claude-code-book/',
-  title: 'Claude Code 实战指南',
+  title: '跟鬼哥一起玩转Claude Code',
   description: '从零到精通 Anthropic Claude Code — 面向开发者的完整参考书',
   lang: 'zh-CN',
 
   themeConfig: {
-    logo: '🤖',
     nav: [
       { text: '开始阅读', link: '/preface' },
       { text: '官方文档', link: 'https://code.claude.com/docs' },

@@ -1,0 +1,5 @@
+/* 确保头像在 nav 标题区域垂直居中 */
+.VPNavBarTitle .title {
+  display: flex;
+  align-items: center;
+}
