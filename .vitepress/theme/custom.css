@@ -1,30 +1,15 @@
-/* ── 头像与书名同行对齐 ── */
+/* ── 头像在上、书名在下（换行排列）── */
 .VPNavBarTitle .title {
   display: inline-flex !important;
-  align-items: center !important;
-  flex-direction: row !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  line-height: 1.2 !important;
+  gap: 2px;
 }
 
-.guige-avatar {
-  display: inline-block !important;
-  flex-shrink: 0;
+/* 头像在 nav-bar-title-before slot 里，确保它是块级 */
+.VPNavBarTitle .title .guige-avatar {
+  display: block !important;
+  width: 28px !important;
+  height: 28px !important;
 }
-
-/* ── 音乐按钮：flex order 插到 Search 和 Menu 之间 ── */
-
-/* Search 排第 1 */
-.VPNavBar .content .content-body .search {
-  order: 1;
-}
-
-/* 我们的音乐按钮排第 2（紧接 Search 后，在 Menu 前）*/
-.VPNavBar .content .content-body .vp-btn-wrap {
-  order: 2;
-}
-
-/* Menu（开始阅读等）排第 3 */
-.VPNavBar .content .content-body .menu {
-  order: 3;
-}
-
-/* 其余保持默认（translations, appearance, social, extra 等排更后面） */

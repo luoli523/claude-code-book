@@ -9,7 +9,7 @@ export default {
   Layout() {
     return h(DefaultTheme.Layout, null, {
       'nav-bar-title-before': () => h(GuigeLogo),
-      'nav-bar-content-before': () => h(VideoPlayer),
+      'nav-bar-content-after': () => h(VideoPlayer),
     })
   }
 }
