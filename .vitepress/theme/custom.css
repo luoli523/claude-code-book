@@ -14,19 +14,9 @@ body, .VPDoc, .vp-doc p, .vp-doc li,
     "WenQuanYi Micro Hei", sans-serif !important;
 }
 
-/* ── 头像在上、书名在下（换行排列）── */
-.VPNavBarTitle .title {
-  display: inline-flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  line-height: 1.2 !important;
-  gap: 2px;
-}
-
-.VPNavBarTitle .title .guige-avatar {
-  display: block !important;
-  width: 28px !important;
-  height: 28px !important;
+/* ── 隐藏左侧原始 title（头像+书名已移至 navbar 中间）── */
+.VPNavBarTitle {
+  display: none !important;
 }
 
 /* ── Sidebar collapse ── */

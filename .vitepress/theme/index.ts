@@ -2,7 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import { h, onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
 import mediumZoom from 'medium-zoom'
-import GuigeLogo from './components/GuigeLogo.vue'
+import NavBrand from './components/NavBrand.vue'
 import VideoPlayer from './components/VideoPlayer.vue'
 import Comment from './components/Comment.vue'
 import SidebarToggle from './components/SidebarToggle.vue'
@@ -12,7 +12,7 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'nav-bar-title-before': () => h(GuigeLogo),
+      'nav-bar-content-before': () => h(NavBrand),
       'nav-bar-content-after': () => h(VideoPlayer),
       'doc-after': () => h(Comment),
       'sidebar-nav-before': () => h(SidebarToggle),

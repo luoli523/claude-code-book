@@ -35,7 +35,7 @@ onMounted(() => {
 <style scoped>
 .sidebar-toggle-btn {
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: calc(var(--vp-sidebar-width, 272px) - 1px);
   transform: translateY(-50%);
   z-index: 100;
