@@ -28,3 +28,16 @@ body, .VPDoc, .vp-doc p, .vp-doc li,
   width: 28px !important;
   height: 28px !important;
 }
+
+/* Image zoom */
+.main img {
+  cursor: zoom-in;
+}
+
+.medium-zoom-overlay {
+  z-index: 100;
+}
+
+.medium-zoom-image--opened {
+  z-index: 101;
+}
