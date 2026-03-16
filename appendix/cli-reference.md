@@ -1,5 +1,8 @@
 # 附录 A：CLI 命令速查表
 
+![附录 A：CLI 命令速查表](/images/appendix/cli-reference.png)
+
+
 > 把这页加书签。遇到不记得的标志，来这里找。
 
 ## 启动方式

@@ -1,5 +1,8 @@
 # 附录 B：配置文件模板
 
+![附录 B：配置文件模板](/images/appendix/config-templates.png)
+
+
 > 开箱即用的配置模板，复制粘贴，按需改动。
 
 ---

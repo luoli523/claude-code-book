@@ -1,5 +1,8 @@
 # 附录 D：推荐资源
 
+![附录 D：推荐资源](/images/appendix/resources.png)
+
+
 > 读完这本书，接下来去哪里继续学？
 
 ---
