@@ -6,6 +6,16 @@ export default defineConfig({
   description: '从零到精通 Anthropic Claude Code — 面向开发者的完整参考书',
   lang: 'zh-CN',
 
+  head: [
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css',
+      },
+    ],
+  ],
+
   themeConfig: {
     nav: [
       { text: '开始阅读', link: '/preface' },
