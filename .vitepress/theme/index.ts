@@ -4,6 +4,7 @@ import { useRoute } from 'vitepress'
 import mediumZoom from 'medium-zoom'
 import GuigeLogo from './components/GuigeLogo.vue'
 import VideoPlayer from './components/VideoPlayer.vue'
+import Comment from './components/Comment.vue'
 import './custom.css'
 
 export default {
@@ -12,6 +13,7 @@ export default {
     return h(DefaultTheme.Layout, null, {
       'nav-bar-title-before': () => h(GuigeLogo),
       'nav-bar-content-after': () => h(VideoPlayer),
+      'doc-after': () => h(Comment),
     })
   },
   setup() {
