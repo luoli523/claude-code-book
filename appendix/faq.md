@@ -1,6 +1,6 @@
 # 附录 C：常见问题解答
 
-![附录 C：常见问题解答](/images/appendix/faq.png)
+![附录 C：常见问题解答](/images/appendix/faq.webp)
 
 
 > 遇到问题先来这里找答案。按分类整理，Ctrl+F 搜关键词。
