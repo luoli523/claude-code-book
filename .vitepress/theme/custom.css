@@ -29,6 +29,31 @@ body, .VPDoc, .vp-doc p, .vp-doc li,
   height: 28px !important;
 }
 
+/* ── Sidebar collapse ── */
+html.sidebar-collapsed .VPSidebar {
+  transform: translateX(-100%);
+  box-shadow: none;
+}
+
+html.sidebar-collapsed .VPContent.has-sidebar {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+@media (min-width: 960px) {
+  html.sidebar-collapsed .VPContent.has-sidebar {
+    padding-left: 32px !important;
+  }
+}
+
+.VPSidebar {
+  transition: transform 0.3s ease;
+}
+
+.VPContent {
+  transition: padding 0.3s ease, margin 0.3s ease;
+}
+
 /* Image zoom */
 .main img {
   cursor: zoom-in;

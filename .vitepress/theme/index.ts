@@ -5,6 +5,7 @@ import mediumZoom from 'medium-zoom'
 import GuigeLogo from './components/GuigeLogo.vue'
 import VideoPlayer from './components/VideoPlayer.vue'
 import Comment from './components/Comment.vue'
+import SidebarToggle from './components/SidebarToggle.vue'
 import './custom.css'
 
 export default {
@@ -14,6 +15,7 @@ export default {
       'nav-bar-title-before': () => h(GuigeLogo),
       'nav-bar-content-after': () => h(VideoPlayer),
       'doc-after': () => h(Comment),
+      'sidebar-nav-before': () => h(SidebarToggle),
     })
   },
   setup() {
