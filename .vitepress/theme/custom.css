@@ -19,6 +19,11 @@ body, .VPDoc, .vp-doc p, .vp-doc li,
   display: none !important;
 }
 
+/* ── Navbar 元素顺序：[nav-brand] [search] [music] [menu] ── */
+.VPNavBarContent .nav-brand   { order: -3; }
+.VPNavBarContent .VPNavBarSearch { order: -2; }
+.VPNavBarContent .vp-btn-wrap { order: -1; }
+
 /* ── Sidebar collapse ── */
 html.sidebar-collapsed .VPSidebar {
   transform: translateX(-100%);

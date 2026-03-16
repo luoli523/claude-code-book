@@ -66,16 +66,15 @@ function closePlayer() {
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  border: 1px solid var(--vp-c-divider);
+  border: none;
   background: transparent;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  transition: background 0.2s, transform 0.15s;
   color: var(--vp-c-text-1);
 }
 .vp-music-btn:hover,
 .vp-music-btn.active {
   background: var(--vp-c-bg-soft);
-  border-color: var(--vp-c-brand-1);
 }
 .vp-music-btn.active .vp-music-icon {
   animation: spin 1.5s linear infinite;
