@@ -1,21 +1,17 @@
-/* ── 霞鹜文楷字体（LXGW WenKai Screen）── */
+/* ── 字体：系统原生字体栈（macOS = PingFang SC / 苹方，Windows = 微软雅黑）── */
 :root {
-  --vp-font-family-base: 'LXGW WenKai Screen', 'LXGW WenKai', sans-serif;
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei",
+    "WenQuanYi Micro Hei", sans-serif;
 }
 
-body,
-.VPDoc,
-.vp-doc p,
-.vp-doc li,
-.vp-doc h1,
-.vp-doc h2,
-.vp-doc h3,
-.vp-doc h4,
-.vp-doc blockquote,
-.vp-doc td,
-.VPNavBarTitle .site-name,
-.VPSidebarItem .text {
-  font-family: 'LXGW WenKai Screen', 'LXGW WenKai', sans-serif !important;
+body, .VPDoc, .vp-doc p, .vp-doc li,
+.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4,
+.vp-doc blockquote, .vp-doc td,
+.VPNavBarTitle .site-name, .VPSidebarItem .text {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei",
+    "WenQuanYi Micro Hei", sans-serif !important;
 }
 
 /* ── 头像在上、书名在下（换行排列）── */
@@ -27,7 +23,6 @@ body,
   gap: 2px;
 }
 
-/* 头像在 nav-bar-title-before slot 里，确保它是块级 */
 .VPNavBarTitle .title .guige-avatar {
   display: block !important;
   width: 28px !important;
