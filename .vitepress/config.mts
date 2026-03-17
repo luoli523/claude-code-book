@@ -9,7 +9,7 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '开始阅读', link: '/preface' },
+      { text: '开始阅读', link: '/' },
       { text: '官方文档', link: 'https://code.claude.com/docs' },
       { text: 'GitHub', link: 'https://github.com' },
     ],
@@ -18,8 +18,7 @@ export default defineConfig({
       {
         text: '前言',
         items: [
-          { text: '关于本书', link: '/' },
-          { text: '前言', link: '/preface' },
+          { text: '前言', link: '/' },
         ]
       },
       {

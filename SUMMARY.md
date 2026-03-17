@@ -1,7 +1,6 @@
 # 目录
 
-[封面](index.md)
-[前言](preface.md)
+[前言](index.md)
 
 ---
 
