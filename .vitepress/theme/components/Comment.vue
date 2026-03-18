@@ -23,6 +23,7 @@ async function initWaline() {
     lang: 'zh-CN',
     pageview: true,
     comment: true,
+    site: 'claude-code-book',
   })
 }
 
