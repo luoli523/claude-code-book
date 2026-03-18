@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/claude-code-book/',
   title: '跟鬼哥玩转Claude Code',
+  srcExclude: ['wechat/**'],
   description: '从零到精通 Anthropic Claude Code — 面向开发者的完整参考书',
   lang: 'zh-CN',
 
