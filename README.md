@@ -38,7 +38,7 @@ npm install
 npm run docs:dev
 ```
 
-访问 http://localhost:5173/claude-code-book/
+访问 `http://localhost:5173/claude-code-book/`
 
 ## 许可证
 
