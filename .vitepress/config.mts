@@ -130,6 +130,7 @@ export default defineConfig({
               { text: '9.3 CI/CD 集成', link: '/chapter-9/9.3-cicd' },
               { text: '9.4 Python/TypeScript SDK', link: '/chapter-9/9.4-sdk' },
               { text: '9.5 构建 Agent 团队', link: '/chapter-9/9.5-agent-teams' },
+              { text: '9.6 Remote Control', link: '/chapter-9/9.6-remote-control' },
             ]
           },
         ]
