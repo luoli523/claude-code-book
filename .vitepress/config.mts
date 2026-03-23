@@ -44,6 +44,7 @@ export default defineConfig({
               { text: '2.2 账号与认证', link: '/chapter-2/2.2-authentication' },
               { text: '2.3 第一个会话', link: '/chapter-2/2.3-first-session' },
               { text: '2.4 初识 CLAUDE.md', link: '/chapter-2/2.4-claude-md-intro' },
+              { text: '2.5 settings.json：权限与行为配置', link: '/chapter-2/2.5-settings-json' },
             ]
           },
         ]

@@ -17,6 +17,7 @@
   - [2.2 账号与认证](chapter-2/2.2-authentication.md)
   - [2.3 第一个会话](chapter-2/2.3-first-session.md)
   - [2.4 初识 CLAUDE.md：让它记住你的项目](chapter-2/2.4-claude-md-intro.md)
+  - [2.5 settings.json：权限与行为配置](chapter-2/2.5-settings-json.md)
 
 ---
 
